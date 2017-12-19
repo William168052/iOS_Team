@@ -1,6 +1,6 @@
 # iPhone计算器UI搭建  
-## Author:[William Zhong](https://github.com/William168052)
-## Edit:[David](https://github.com/HBU)
+##### Author:[William Zhong](https://github.com/William168052)
+##### Edit:[David](https://github.com/HBU)
 ### iOS开发中UI是重要的一部分
 ### 本文通过搭建【iOS计算器UI】学习使用storyboard搭建软件UI。<br>
 #### 效果图如下：<br>
