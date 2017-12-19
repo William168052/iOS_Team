@@ -34,7 +34,7 @@
 - (NSArray *)btnArray{
     if(_btnArray == nil){
         NSMutableArray *arr = [NSMutableArray arrayWithObjects:@"AC",@"+/-",@"%",@"÷",@"7",@"8",@"9",@"×",@"4",@"5",@"6",@"-",@"1",@"2",@"3",@"+",@"0",@".",@"=",nil];
-        self.btnArray = [NSArray arrayWithArray:arr];
+        _btnArray = [NSArray arrayWithArray:arr];
     }
     return _btnArray;
 }
