@@ -1,6 +1,8 @@
 # iPhone计算器界面搭建  
-在iOS开发中界面的搭建是开发过程中很重要的一部分，下面就通过搭建iOS自带计算器界面来练习一下通过storyboard搭建软件界面。<br>
+###  在iOS开发中界面的搭建是开发过程中很重要的一部分
+### 下面通过搭建iOS自带计算器界面来练习一下通过storyboard搭建软件界面。<br>
 效果图如下：<br>
+![](https://github.com/HBU/iOS_Team/blob/master/iOS_Demo/Calculator/Pic/1.png)
 一、新建工程这一步在此就不再赘述，注意在语言选择那一栏选择Objective-C。<br>
 二、首先进入到Main.storyboard中，先构思一下需要一些什么控件。<br>
 1、由上效果图我们可知需要一个UILabel来显示输入的结果还要一些button作为按钮。<br>
