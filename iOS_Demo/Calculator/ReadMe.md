@@ -20,7 +20,7 @@
 ![](https://github.com/HBU/iOS_Team/blob/master/iOS_Demo/Calculator/Pic/5.png)
 #### （2）设置labelView的X,Y,width,height对应为0,0,375,197。<br>
 #### 同样可设置buttonView的X,Y,width,height对应为0,197,375,470。<br>
-!@[](https://github.com/HBU/iOS_Team/blob/master/iOS_Demo/Calculator/Pic/6.png)
+![](https://github.com/HBU/iOS_Team/blob/master/iOS_Demo/Calculator/Pic/6.png)
 #### 效果如下：<br>
 ![](https://github.com/HBU/iOS_Team/blob/master/iOS_Demo/Calculator/Pic/7.png)
 #### （3）添加UILabel控件并设置其X,Y,width,height对应为0,101,363,77。将其标题改为“0”并且设置对齐方式为右对齐，设置字体大小和粗细。<br>
