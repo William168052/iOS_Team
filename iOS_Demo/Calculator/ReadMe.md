@@ -1,4 +1,6 @@
 # iPhone计算器界面搭建  
+## Author:[William Zhong](https://github.com/William168052)
+## Edit:[David](https://github.com/HBU)
 ###  在iOS开发中界面的搭建是开发过程中很重要的一部分
 ### 下面通过搭建iOS自带计算器界面来练习一下通过storyboard搭建软件界面。<br>
 #### 效果图如下：<br>
