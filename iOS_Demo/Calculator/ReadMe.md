@@ -11,9 +11,7 @@
 ## 二、首先进入到Main.storyboard中，先构思一下需要一些什么控件。<br>
 ### 1、由上效果图我们可知需要一个UILabel来显示输入的结果还要一些button作为按钮。<br>
 
-### 2、我们可以把他们全部放进控制器的view中，但是有一个问题，到时候我们如果要取出这些空间有些麻烦，<br>
-### 因为他们不是一个种类的，得需要做一个判断，故我们可以先添加两个UIView控件（分别起名labelView和buttonView），<br>
-### 将那些按钮统一放在buttonView里面，这样我们就可以通过buttonView的subviews属性拿到这些按钮，在labelView中添加一个UILabel控件来显示结果。<br>
+### 2、我们可以把他们全部放进控制器的view中，但是有一个问题，到时候我们如果要取出这些空间有些麻烦，因为他们不是一个种类的，得需要做一个判断，故我们可以先添加两个UIView控件（分别起名labelView和buttonView），将那些按钮统一放在buttonView里面，这样我们就可以通过buttonView的subviews属性拿到这些按钮，在labelView中添加一个UILabel控件来显示结果。<br>
 ### 如下图所示：<br>
 ![](https://github.com/HBU/iOS_Team/blob/master/iOS_Demo/Calculator/Pic/3.png)
 
