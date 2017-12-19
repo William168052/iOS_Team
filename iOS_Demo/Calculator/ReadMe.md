@@ -32,6 +32,5 @@
 #### 由于屏幕尺寸是375*667，即可计算出每个button的宽度和高度均为94（此处不再计算）拖入button控件并将button标题字体大小设置成39。<br>
 #### 效果如下：<br>
 ![](https://github.com/HBU/iOS_Team/blob/master/iOS_Demo/Calculator/Pic/11.png)
-![](https://github.com/HBU/iOS_Team/blob/master/iOS_Demo/Calculator/Pic/12.png)
 #### 到此所有的控件均已搭建完毕,只用修改下每个按钮标题和背景颜色就可以显示出效果了，如下：<br>
-![](https://github.com/HBU/iOS_Team/blob/master/iOS_Demo/Calculator/Pic/1.png)
+![](https://github.com/HBU/iOS_Team/blob/master/iOS_Demo/Calculator/Pic/12.png)
