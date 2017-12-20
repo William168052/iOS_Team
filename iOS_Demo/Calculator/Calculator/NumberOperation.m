@@ -110,7 +110,7 @@
                 //输入运算符优先级高于栈顶运算符入栈
                 [oprS push:[NSString stringWithFormat:@"%c",c1]];
             }else if([self compareOprWithInputOpr:[NSString stringWithFormat:@"%c",c1] andTopOpr:[oprS getTopElement]] == NO){
-                //输入运算符优先级低于栈顶运算符取数据栈栈顶两个元素进行运算
+                //输入运算符优先级不高于栈顶运算符取数据栈栈顶两个元素进行运算
                 double val1 = [[numS pop] doubleValue];
                 double val2 = [[numS pop] doubleValue];
                 NSNumber *res = [self calculateWithValue_1:val2 andValue_2:val1 andOprator:[oprS pop]];

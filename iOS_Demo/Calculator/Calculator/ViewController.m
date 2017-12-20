@@ -15,8 +15,7 @@
 @property (nonatomic ,strong) NSArray *btnArray;
 //显示结果的Label
 @property (weak, nonatomic) IBOutlet UILabel *displayLabel;
-//等于号
-
+//AC
 @property (weak, nonatomic) IBOutlet UIButton *ACButton;
 @end
 
@@ -26,6 +25,9 @@
     [super viewDidLoad];
     //设置状态栏颜色
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+    //设置Label字数超出自动缩小
+    self.displayLabel.adjustsFontSizeToFitWidth = YES;
+    self.displayLabel.minimumFontSize = 50;
     //加载button数据
     [self loadData];
 }
@@ -33,17 +35,16 @@
     [self.displayLabel setText:@"0"];
     [self.ACButton setTitle:@"AC" forState:UIControlStateNormal];
 }
-
 - (IBAction)buttonTouched:(UIButton *)sender {
-    NSString *s = self.displayLabel.text;
-    if([s isEqualToString:@"0"]){
-        s = @"";
-    }
-    NSString *s2 = sender.titleLabel.text;
-    self.displayLabel.text = [NSString stringWithFormat:@"%@%@",s,s2];
-    [self.ACButton setTitle:@"C" forState:UIControlStateNormal];
+        NSString *s = self.displayLabel.text;
+        if([s isEqualToString:@"0"]){
+            s = @"";
+        }
+        NSString *s2 = sender.titleLabel.text;
+        self.displayLabel.text = [NSString stringWithFormat:@"%@%@",s,s2];
+        [self.ACButton setTitle:@"C" forState:UIControlStateNormal];
+    
 }
-
 //改变正负号的按钮
 - (IBAction)changeSign:(UIButton *)sender {
     NSString *s = self.displayLabel.text;
@@ -58,18 +59,14 @@
     num = -num;
     //%g格式符不输出小数点后无意义的零
     self.displayLabel.text = [NSString stringWithFormat:@"%g",num];
-    
 }
 //“=”按钮
 - (IBAction)resultNumber:(UIButton *)sender {
     NSString *s = self.displayLabel.text;
     NSNumber *result = [NumberOperation calculateWithExpression:s];
-    self.displayLabel.text = result.stringValue;
+    double res = result.doubleValue;
+    self.displayLabel.text = [NSString stringWithFormat:@"%g",res];
 }
-
-
-
-
 //懒加载btnArray
 - (NSArray *)btnArray{
     if(_btnArray == nil){
@@ -78,7 +75,6 @@
     }
     return _btnArray;
 }
-
 //加载button数据
 - (void)loadData{
     NSArray *arr = self.buttonView.subviews;
@@ -95,16 +91,9 @@
         //重新赋值回去
         obj = btn;
     }];
-    
-
-    
 }
-
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-
 @end

@@ -306,7 +306,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="195"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldF-37-nDE">
-                                        <rect key="frame" x="0.0" y="99" width="363" height="77"/>
+                                        <rect key="frame" x="8" y="99" width="355" height="77"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="77" id="uda-oQ-zv8"/>
                                         </constraints>
@@ -317,7 +317,7 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.12549019607843137" green="0.12549019607843137" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="ldF-37-nDE" firstAttribute="leading" secondItem="yrF-E4-Uxe" secondAttribute="leading" id="4Uh-He-xLU"/>
+                                    <constraint firstItem="ldF-37-nDE" firstAttribute="leading" secondItem="yrF-E4-Uxe" secondAttribute="leading" constant="8" id="4Uh-He-xLU"/>
                                     <constraint firstAttribute="bottom" secondItem="ldF-37-nDE" secondAttribute="bottom" constant="19" id="YUF-yP-Zd4"/>
                                     <constraint firstAttribute="trailing" secondItem="ldF-37-nDE" secondAttribute="trailing" constant="12" id="hCx-Qb-Vpg"/>
                                 </constraints>
