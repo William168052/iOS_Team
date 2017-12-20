@@ -7,6 +7,7 @@
 //
 
 #import "NumberOperation.h"
+#import "Stack.h"
 
 @implementation NumberOperation
 
@@ -66,5 +67,69 @@
     return NO;
 }
 
++ (NSNumber *)calculateWithValue_1 :(double)a andValue_2 :(double)b andOprator :(NSString *)opr{
+    if([opr isEqualToString:@"+"]){
+        return [self plusWithValue_1:a andValue_2:b];
+    }else if([opr isEqualToString:@"-"]){
+        return [self substractWithValue_1:a andValue_2:b];
+    }else if([opr isEqualToString:@"×"]){
+        return [self multiplyWithValue_1:a andValue_2:b];
+    }else if([opr isEqualToString:@"÷"]){
+        return [self divideWithValue_1:a andValue_2:b];
+    }else if([opr isEqualToString:@"%"]){
+        return [self remainderWithValue_1:a andValue_2:b];
+    }else{
+        return 0;
+    }
+}
+//表达式求值
++ (NSNumber *)calculateWithExpression :(NSString *)exp{
+    Stack<NSString *> *oprS = [[Stack alloc] init];
+    Stack<NSString *> *numS = [[Stack alloc] init];
+    double result;
+    for(NSInteger i = 0;i<exp.length;i++){
+        char c1 = [exp characterAtIndex:i];
+        if(c1>='0'&&c1<='9'){
+            NSString *s = @"";
+            s = [NSString localizedStringWithFormat:@"%c",c1];
+            for(NSInteger j = i+1;j<exp.length;j++){
+                char c2 = [exp characterAtIndex:j];
+                if(c2>='0'&&c2<='9'){
+                    s = [NSString stringWithFormat:@"%@%c",s,c2];
+                    i = j;
+                }else{
+                    break;
+                }
+            }
+            //入栈
+            [numS push:s];
+        }else{
+            if(oprS.isEmpty){
+                [oprS push:[NSString stringWithFormat:@"%c",c1]];
+            }else if([self compareOprWithInputOpr:[NSString stringWithFormat:@"%c",c1] andTopOpr:[oprS getTopElement]] == YES){
+                //输入运算符优先级高于栈顶运算符入栈
+                [oprS push:[NSString stringWithFormat:@"%c",c1]];
+            }else if([self compareOprWithInputOpr:[NSString stringWithFormat:@"%c",c1] andTopOpr:[oprS getTopElement]] == NO){
+                //输入运算符优先级低于栈顶运算符取数据栈栈顶两个元素进行运算
+                double val1 = [[numS pop] doubleValue];
+                double val2 = [[numS pop] doubleValue];
+                NSNumber *res = [self calculateWithValue_1:val2 andValue_2:val1 andOprator:[NSString stringWithFormat:@"%c",c1]];
+                [numS push:[res stringValue]];
+            }else{
+                break;
+            }
+        }
+        while(oprS.isEmpty != YES){
+            double val1 = [[numS pop] doubleValue];
+            double val2 = [[numS pop] doubleValue];
+            NSString *opr = [oprS pop];
+            NSNumber *res = [self calculateWithValue_1:val2 andValue_2:val1 andOprator:opr];
+            [numS push:[res stringValue]];
+        }
+    }
+    //oprStack栈为空则最后结果就是numStack的栈顶元素
+    result = [numS pop].doubleValue;
+    return [NSNumber numberWithDouble:result];
+}
 
 @end

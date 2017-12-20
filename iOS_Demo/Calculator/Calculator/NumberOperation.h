@@ -15,5 +15,7 @@
 + (NSNumber *)multiplyWithValue_1 :(double)a andValue_2 :(double)b;
 + (NSNumber *)divideWithValue_1 :(double)a andValue_2 :(double)b;
 + (NSNumber *)remainderWithValue_1 :(double)a andValue_2 :(double)b;
+//表达式求值
++ (NSNumber *)calculateWithExpression :(NSString *)exp;
 
 @end
