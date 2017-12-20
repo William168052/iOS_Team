@@ -15,6 +15,7 @@
 		3D6BD4431FE7F2D7002553E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6BD4421FE7F2D7002553E9 /* main.m */; };
 		3D6BD44D1FE7F2D7002553E9 /* CalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6BD44C1FE7F2D7002553E9 /* CalculatorTests.m */; };
 		3D6BD4581FE7F2D7002553E9 /* CalculatorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6BD4571FE7F2D7002553E9 /* CalculatorUITests.m */; };
+		3D6BD5121FEA4B77002553E9 /* NumberOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6BD5111FEA4B77002553E9 /* NumberOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		3D6BD4531FE7F2D7002553E9 /* CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D6BD4571FE7F2D7002553E9 /* CalculatorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorUITests.m; sourceTree = "<group>"; };
 		3D6BD4591FE7F2D7002553E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D6BD5101FEA4B77002553E9 /* NumberOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NumberOperation.h; sourceTree = "<group>"; };
+		3D6BD5111FEA4B77002553E9 /* NumberOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NumberOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				3D6BD4341FE7F2D7002553E9 /* AppDelegate.m */,
 				3D6BD4361FE7F2D7002553E9 /* ViewController.h */,
 				3D6BD4371FE7F2D7002553E9 /* ViewController.m */,
+				3D6BD5101FEA4B77002553E9 /* NumberOperation.h */,
+				3D6BD5111FEA4B77002553E9 /* NumberOperation.m */,
 				3D6BD4391FE7F2D7002553E9 /* Main.storyboard */,
 				3D6BD43C1FE7F2D7002553E9 /* Assets.xcassets */,
 				3D6BD43E1FE7F2D7002553E9 /* LaunchScreen.storyboard */,
@@ -267,6 +272,7 @@
 			files = (
 				3D6BD4381FE7F2D7002553E9 /* ViewController.m in Sources */,
 				3D6BD4431FE7F2D7002553E9 /* main.m in Sources */,
+				3D6BD5121FEA4B77002553E9 /* NumberOperation.m in Sources */,
 				3D6BD4351FE7F2D7002553E9 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
