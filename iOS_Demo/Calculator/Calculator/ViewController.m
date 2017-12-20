@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "NumberOperation.h"
+#import "Stack.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIView *buttonView;
@@ -14,7 +16,8 @@
 //显示结果的Label
 @property (weak, nonatomic) IBOutlet UILabel *displayLabel;
 //等于号
-@property (weak, nonatomic) IBOutlet UIButton *equalButton;
+
+@property (weak, nonatomic) IBOutlet UIButton *ACButton;
 @end
 
 @implementation ViewController
@@ -25,10 +28,47 @@
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
     //加载button数据
     [self loadData];
-    
-    
+}
+- (IBAction)ACTouched:(UIButton *)sender {
+    [self.displayLabel setText:@"0"];
+    [self.ACButton setTitle:@"AC" forState:UIControlStateNormal];
+}
+
+- (IBAction)buttonTouched:(UIButton *)sender {
+    NSString *s = self.displayLabel.text;
+    if([s isEqualToString:@"0"]){
+        s = @"";
+    }
+    NSString *s2 = sender.titleLabel.text;
+    self.displayLabel.text = [NSString stringWithFormat:@"%@%@",s,s2];
+    [self.ACButton setTitle:@"C" forState:UIControlStateNormal];
+}
+
+//改变正负号的按钮
+- (IBAction)changeSign:(UIButton *)sender {
+    NSString *s = self.displayLabel.text;
+    double num;
+    @try{
+        num = s.doubleValue;
+    }
+    @catch(NSException *exception){
+        NSLog(@"Exception named %@ accured , reason is : %@",exception.name,exception.reason);
+        num = 0.0;
+    }
+    num = -num;
+    //%g格式符不输出小数点后无意义的零
+    self.displayLabel.text = [NSString stringWithFormat:@"%g",num];
     
 }
+//“=”按钮
+- (IBAction)resultNumber:(UIButton *)sender {
+    NSString *s = self.displayLabel.text;
+    NSNumber *result = [NumberOperation calculateWithExpression:s];
+    self.displayLabel.text = result.stringValue;
+}
+
+
+
 
 //懒加载btnArray
 - (NSArray *)btnArray{

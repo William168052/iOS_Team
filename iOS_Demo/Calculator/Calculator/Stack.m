@@ -40,5 +40,12 @@
         return NO;
 }
 
+- (NSMutableArray *)dataArray{
+    if(_dataArray == nil){
+        _dataArray = [[NSMutableArray alloc] init];
+    }
+    return _dataArray;
+}
+
 
 @end

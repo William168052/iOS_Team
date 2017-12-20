@@ -94,7 +94,7 @@
             s = [NSString localizedStringWithFormat:@"%c",c1];
             for(NSInteger j = i+1;j<exp.length;j++){
                 char c2 = [exp characterAtIndex:j];
-                if(c2>='0'&&c2<='9'){
+                if((c2>='0'&&c2<='9') || c2 == '.'){
                     s = [NSString stringWithFormat:@"%@%c",s,c2];
                     i = j;
                 }else{
@@ -113,19 +113,21 @@
                 //输入运算符优先级低于栈顶运算符取数据栈栈顶两个元素进行运算
                 double val1 = [[numS pop] doubleValue];
                 double val2 = [[numS pop] doubleValue];
-                NSNumber *res = [self calculateWithValue_1:val2 andValue_2:val1 andOprator:[NSString stringWithFormat:@"%c",c1]];
+                NSNumber *res = [self calculateWithValue_1:val2 andValue_2:val1 andOprator:[oprS pop]];
                 [numS push:[res stringValue]];
+                [oprS push:[NSString stringWithFormat:@"%c",c1]];
             }else{
                 break;
             }
         }
-        while(oprS.isEmpty != YES){
-            double val1 = [[numS pop] doubleValue];
-            double val2 = [[numS pop] doubleValue];
-            NSString *opr = [oprS pop];
-            NSNumber *res = [self calculateWithValue_1:val2 andValue_2:val1 andOprator:opr];
-            [numS push:[res stringValue]];
-        }
+        
+    }
+    while(oprS.isEmpty != YES){
+        double val1 = [[numS pop] doubleValue];
+        double val2 = [[numS pop] doubleValue];
+        NSString *opr = [oprS pop];
+        NSNumber *res = [self calculateWithValue_1:val2 andValue_2:val1 andOprator:opr];
+        [numS push:[res stringValue]];
     }
     //oprStack栈为空则最后结果就是numStack的栈顶元素
     result = [numS pop].doubleValue;
