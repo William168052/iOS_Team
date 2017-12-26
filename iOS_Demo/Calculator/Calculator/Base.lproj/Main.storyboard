@@ -303,10 +303,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="222.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldF-37-nDE">
-                                        <rect key="frame" x="8" y="126.5" width="355" height="77"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="77" id="uda-oQ-zv8"/>
-                                        </constraints>
+                                        <rect key="frame" x="8" y="129.5" width="355" height="74"/>
                                         <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="94"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -315,6 +312,7 @@
                                 <color key="backgroundColor" red="0.12549019607843137" green="0.12549019607843137" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="ldF-37-nDE" firstAttribute="leading" secondItem="yrF-E4-Uxe" secondAttribute="leading" constant="8" id="4Uh-He-xLU"/>
+                                    <constraint firstItem="ldF-37-nDE" firstAttribute="height" secondItem="yrF-E4-Uxe" secondAttribute="height" multiplier="1:3" id="ITJ-2i-0mD"/>
                                     <constraint firstAttribute="bottom" secondItem="ldF-37-nDE" secondAttribute="bottom" constant="19" id="YUF-yP-Zd4"/>
                                     <constraint firstAttribute="trailing" secondItem="ldF-37-nDE" secondAttribute="trailing" constant="12" id="hCx-Qb-Vpg"/>
                                 </constraints>
