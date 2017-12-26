@@ -5,7 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,13 +19,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pd4-ub-sgz">
-                                <rect key="frame" x="0.0" y="195" width="375" height="472"/>
+                                <rect key="frame" x="0.0" y="222.5" width="375" height="444.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6L-1K-LFE">
-                                        <rect key="frame" x="0.0" y="0.0" width="94" height="94"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="f6L-1K-LFE" secondAttribute="height" multiplier="1:1" id="DVO-0n-uYO"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="0.0" width="94" height="88.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="39"/>
                                         <state key="normal" title="AC" backgroundImage="number_button_Default">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -35,7 +32,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZA-lv-RLd">
-                                        <rect key="frame" x="94" y="0.0" width="93.5" height="94"/>
+                                        <rect key="frame" x="94" y="0.0" width="93.5" height="88.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="39"/>
                                         <state key="normal" title="+/-" backgroundImage="number_button_Default">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -45,7 +42,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wqY-rc-DZx">
-                                        <rect key="frame" x="187.5" y="0.0" width="94" height="94"/>
+                                        <rect key="frame" x="187.5" y="0.0" width="94" height="88.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="39"/>
                                         <state key="normal" title="%" backgroundImage="number_button_Default">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -55,7 +52,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cwk-0W-mZ9">
-                                        <rect key="frame" x="281.5" y="0.0" width="93.5" height="94"/>
+                                        <rect key="frame" x="281.5" y="0.0" width="93.5" height="88.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="39"/>
                                         <state key="normal" title="÷" backgroundImage="number_button_orange_default">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -65,7 +62,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfV-8C-BgO">
-                                        <rect key="frame" x="0.0" y="94" width="94" height="94.5"/>
+                                        <rect key="frame" x="0.0" y="88.5" width="94" height="89"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="39"/>
                                         <state key="normal" title="7" backgroundImage="number_button_Default">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -75,7 +72,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8YI-uP-WVE">
-                                        <rect key="frame" x="94" y="94" width="94" height="94.5"/>
+                                        <rect key="frame" x="94" y="88.5" width="94" height="89"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="39"/>
                                         <state key="normal" title="8" backgroundImage="number_button_Default">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -85,7 +82,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Krb-Vn-AfJ">
-                                        <rect key="frame" x="187" y="94" width="94" height="94.5"/>
+                                        <rect key="frame" x="187" y="88.5" width="94" height="89"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="39"/>
                                         <state key="normal" title="9" backgroundImage="number_button_Default">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -95,7 +92,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3yg-Rm-6tu">
-                                        <rect key="frame" x="281" y="94" width="94" height="94.5"/>
+                                        <rect key="frame" x="281" y="88.5" width="94" height="89"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="39"/>
                                         <state key="normal" title="×" backgroundImage="number_button_orange_default">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -105,7 +102,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k90-Ie-Vn5">
-                                        <rect key="frame" x="0.0" y="188.5" width="94" height="94.5"/>
+                                        <rect key="frame" x="0.0" y="177.5" width="94" height="89"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="39"/>
                                         <state key="normal" title="4" backgroundImage="number_button_Default">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -115,7 +112,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cf3-X6-euu">
-                                        <rect key="frame" x="94" y="188.5" width="94" height="94.5"/>
+                                        <rect key="frame" x="94" y="177.5" width="94" height="89"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="39"/>
                                         <state key="normal" title="5" backgroundImage="number_button_Default">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -125,7 +122,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDw-Er-RK7">
-                                        <rect key="frame" x="187" y="188.5" width="94" height="94.5"/>
+                                        <rect key="frame" x="187" y="177.5" width="94" height="89"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="39"/>
                                         <state key="normal" title="6" backgroundImage="number_button_Default">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -135,7 +132,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ar-GQ-VuU">
-                                        <rect key="frame" x="281" y="188.5" width="94" height="94.5"/>
+                                        <rect key="frame" x="281" y="177.5" width="94" height="89"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="39"/>
                                         <state key="normal" title="-" backgroundImage="number_button_orange_default">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -145,7 +142,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cJO-T5-ibW">
-                                        <rect key="frame" x="0.0" y="283" width="94" height="94.5"/>
+                                        <rect key="frame" x="0.0" y="266.5" width="94" height="89"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="39"/>
                                         <state key="normal" title="1" backgroundImage="number_button_Default">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -155,7 +152,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVe-qn-V6Y">
-                                        <rect key="frame" x="94" y="283" width="94" height="94.5"/>
+                                        <rect key="frame" x="94" y="266.5" width="94" height="89"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="39"/>
                                         <state key="normal" title="2" backgroundImage="number_button_Default">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -165,7 +162,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0a-IQ-95f">
-                                        <rect key="frame" x="187" y="283" width="94" height="94.5"/>
+                                        <rect key="frame" x="187" y="266.5" width="94" height="89"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="39"/>
                                         <state key="normal" title="3" backgroundImage="number_button_Default">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -175,7 +172,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZdS-Km-XXn">
-                                        <rect key="frame" x="281" y="283" width="94" height="94.5"/>
+                                        <rect key="frame" x="281" y="266.5" width="94" height="89"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="39"/>
                                         <state key="normal" title="+" backgroundImage="number_button_orange_default">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -185,7 +182,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mDh-DC-icM">
-                                        <rect key="frame" x="0.0" y="377.5" width="187" height="94.5"/>
+                                        <rect key="frame" x="0.0" y="355.5" width="187" height="89"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="39"/>
                                         <state key="normal" title="0" backgroundImage="number_button_Default">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -195,7 +192,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qeL-GD-Zc7">
-                                        <rect key="frame" x="187" y="377.5" width="94" height="94.5"/>
+                                        <rect key="frame" x="187" y="355.5" width="94" height="89"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="39"/>
                                         <state key="normal" title="." backgroundImage="number_button_Default">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -205,7 +202,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZh-xr-OZ9">
-                                        <rect key="frame" x="281" y="377.5" width="94" height="94.5"/>
+                                        <rect key="frame" x="281" y="355.5" width="94" height="89"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="39"/>
                                         <state key="normal" title="=" backgroundImage="number_button_orange_default">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -303,10 +300,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yrF-E4-Uxe">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="195"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="222.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldF-37-nDE">
-                                        <rect key="frame" x="8" y="99" width="355" height="77"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldF-37-nDE">
+                                        <rect key="frame" x="8" y="126.5" width="355" height="77"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="77" id="uda-oQ-zv8"/>
                                         </constraints>
@@ -326,6 +323,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Pd4-ub-sgz" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="JRQ-XS-s1O"/>
+                            <constraint firstItem="yrF-E4-Uxe" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:3" id="Veb-kb-hm6"/>
                             <constraint firstItem="Pd4-ub-sgz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Y3A-ty-rRl"/>
                             <constraint firstItem="yrF-E4-Uxe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fSQ-sJ-Vl8"/>
                             <constraint firstItem="yrF-E4-Uxe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fe7-8E-OWB"/>
