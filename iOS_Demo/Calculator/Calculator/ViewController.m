@@ -27,7 +27,6 @@
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
     //设置Label字数超出自动缩小
     self.displayLabel.adjustsFontSizeToFitWidth = YES;
-    self.displayLabel.minimumFontSize = 50;
     //加载button数据
     [self loadData];
 }
@@ -96,4 +95,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 @end
